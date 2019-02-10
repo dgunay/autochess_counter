@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A7FAE023-634B-408E-A1D3-689E7B875F47}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WpfApp1</RootNamespace>
-    <AssemblyName>WpfApp1</AssemblyName>
+    <RootNamespace>AutoChess_Counter</RootNamespace>
+    <AssemblyName>AutoChess_Counter</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -92,6 +93,64 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Abaddon+Dota+2.png" />
+    <Resource Include="Images\Alchemist+Dota+2.png" />
+    <Resource Include="Images\Anti+Mage+Dota+2.png" />
+    <Resource Include="Images\Axe+Dota+2.png" />
+    <Resource Include="Images\Batrider+Dota+2.png" />
+    <Resource Include="Images\Beastmaster+Dota+2.png" />
+    <Resource Include="Images\Bounty+Hunter+Dota+2.png" />
+    <Resource Include="Images\Chaos+Knight+Dota+2.png" />
+    <Resource Include="Images\Clockwerk+Dota+2.png" />
+    <Resource Include="Images\Crystal+Maiden+Dota+2.png" />
+    <Resource Include="Images\Disruptor+Dota+2.png" />
+    <Resource Include="Images\Doom+Dota+2.png" />
+    <Resource Include="Images\Dragon+Knight+Dota+2.png" />
+    <Resource Include="Images\Drow+Ranger+Dota+2.png" />
+    <Resource Include="Images\Enchantress+Dota+2.png" />
+    <Resource Include="Images\Enigma+Dota+2.png" />
+    <Resource Include="Images\Gyrocopter+Dota+2.png" />
+    <Resource Include="Images\Juggernaut+Dota+2.png" />
+    <Resource Include="Images\Keeper+of+the+Light+Dota+2.png" />
+    <Resource Include="Images\Kunkka+Dota+2.png" />
+    <Resource Include="Images\Lich+Dota+2.png" />
+    <Resource Include="Images\Lina+Dota+2.png" />
+    <Resource Include="Images\Lone+Druid+Dota+2.png" />
+    <Resource Include="Images\Luna+Dota+2.png" />
+    <Resource Include="Images\Lycan+Dota+2.png" />
+    <Resource Include="Images\Medusa+Dota+2.png" />
+    <Resource Include="Images\Morphling+Dota+2.png" />
+    <Resource Include="Images\Natures+Prophet+Dota+2.png" />
+    <Resource Include="Images\Necrophos+Dota+2.png" />
+    <Resource Include="Images\Ogre+Magi+Dota+2.png" />
+    <Resource Include="Images\Omniknight+Dota+2.png" />
+    <Resource Include="Images\Phantom+Assassin+Dota+2.png" />
+    <Resource Include="Images\Puck+Dota+2.png" />
+    <Resource Include="Images\Queen+of+Pain+Dota+2.png" />
+    <Resource Include="Images\Razor+Dota+2.png" />
+    <Resource Include="Images\Sand+King+Dota+2.png" />
+    <Resource Include="Images\Shadow+Fiend+Dota+2.png" />
+    <Resource Include="Images\Shadow+Shaman+Dota+2.png" />
+    <Resource Include="Images\Slardar+Dota+2.png" />
+    <Resource Include="Images\Slark+Dota+2.png" />
+    <Resource Include="Images\Sniper+Dota+2.png" />
+    <Resource Include="Images\Techies+Dota+2.png" />
+    <Resource Include="Images\Templar+Assassin+Dota+2.png" />
+    <Resource Include="Images\Terrorblade+Dota+2.png" />
+    <Resource Include="Images\Tidehunter+Dota+2.png" />
+    <Resource Include="Images\Timbersaw+Dota+2.png" />
+    <Resource Include="Images\Tinker+Dota+2.png" />
+    <Resource Include="Images\Tiny+Dota+2.png" />
+    <Resource Include="Images\Treant+Protector+Dota+2.png" />
+    <Resource Include="Images\Troll+Warlord+Dota+2.png" />
+    <Resource Include="Images\Tusk+Dota+2.png" />
+    <Resource Include="Images\Venomancer+Dota+2.png" />
+    <Resource Include="Images\Viper+Dota+2.png" />
+    <Resource Include="Images\Windranger+Dota+2.png" />
+    <Resource Include="Images\Witch+Doctor+Dota+2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
