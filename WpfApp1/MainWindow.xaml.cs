@@ -905,5 +905,64 @@ namespace AutoChess_Counter
                 --count;
             TxtWitchDoctorCount.Text = count.ToString();
         }
+
+        private void BtnReset_Click(object sender, RoutedEventArgs e)
+        {
+            TxtAbaddonCount.Text   = "0";
+            TxtAlchemistCount.Text = "0";
+            TxtAntiMageCount.Text  = "0";
+            TxtAxeCount.Text       = "0";
+            TxtBatriderCount.Text = "0";
+            TxtBeastmasterCount.Text = "0";
+            TxtBountyHunterCount.Text = "0";
+            TxtChaosKnightCount.Text = "0";
+            TxtClockwerkCount.Text = "0";
+            TxtCrystalMaidenCount.Text = "0";
+            TxtDisruptorCount.Text = "0";
+            TxtDoomCount.Text = "0";
+            TxtDragonKnightCount.Text = "0";
+            TxtDrowRangerCount.Text = "0";
+            TxtEnchantressCount.Text = "0";
+            TxtEnigmaCount.Text = "0";
+            TxtGyrocopterCount.Text = "0";
+            TxtJuggernautCount.Text = "0";
+            TxtKeeperoftheLightCount.Text = "0";
+            TxtKunkkaCount.Text = "0";
+            TxtLichCount.Text = "0";
+            TxtLinaCount.Text = "0";
+            TxtLoneDruidCount.Text = "0";
+            TxtLunaCount.Text = "0";
+            TxtLycanCount.Text = "0";
+            TxtMedusaCount.Text = "0";
+            TxtMorphlingCount.Text = "0";
+            TxtNaturesProphetCount.Text = "0";
+            TxtNecrophosCount.Text = "0";
+            TxtOgreMagiCount.Text = "0";
+            TxtOmniknightCount.Text = "0";
+            TxtPhantomAssassinCount.Text = "0";
+            TxtPuckCount.Text = "0";
+            TxtQueenofPainCount.Text = "0";
+            TxtRazorCount.Text = "0";
+            TxtSandKingCount.Text = "0";
+            TxtShadowFiendCount.Text = "0";
+            TxtShadowShamanCount.Text = "0";
+            TxtSlardarCount.Text = "0";
+            TxtSlarkCount.Text = "0";
+            TxtSniperCount.Text = "0";
+            TxtTechiesCount.Text = "0";
+            TxtTemplarAssassinCount.Text = "0";
+            TxtTerrorbladeCount.Text = "0";
+            TxtTidehunterCount.Text = "0";
+            TxtTimbersawCount.Text = "0";
+            TxtTinkerCount.Text = "0";
+            TxtTinyCount.Text = "0";
+            TxtTreantProtectorCount.Text = "0";
+            TxtTrollWarlordCount.Text = "0";
+            TxtTuskCount.Text = "0";
+            TxtVenomancerCount.Text = "0";
+            TxtViperCount.Text = "0";
+            TxtWindrangerCount.Text = "0";
+            TxtWitchDoctorCount.Text = "0";
+        }
     }
 }
