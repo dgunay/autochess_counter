@@ -9,11 +9,13 @@ namespace AutoChess_Counter
     // Represents a hero. Constrains its count to 0 >= x <= 3
     class HeroCounter
     {
-        private int count;
+        private int    count;
+        private string heroImage;
 
-        public HeroCounter()
+        public HeroCounter(string img)
         {
-            count = 0;
+            count     = 0;
+            heroImage = img;
         }
 
         public void increment()
@@ -32,6 +34,7 @@ namespace AutoChess_Counter
             }
         }
 
-        public int getCount() { return count; }
+        public int    getCount() { return count;     }
+        public string getImage() { return heroImage; }
     }
 }

@@ -63,6 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="HeroCounter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -94,63 +95,62 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Resource Include="Images\Abaddon+Dota+2.png" />
-    <Resource Include="Images\Alchemist+Dota+2.png" />
-    <Resource Include="Images\Anti+Mage+Dota+2.png" />
-    <Resource Include="Images\Axe+Dota+2.png" />
-    <Resource Include="Images\Batrider+Dota+2.png" />
-    <Resource Include="Images\Beastmaster+Dota+2.png" />
-    <Resource Include="Images\Bounty+Hunter+Dota+2.png" />
-    <Resource Include="Images\Chaos+Knight+Dota+2.png" />
-    <Resource Include="Images\Clockwerk+Dota+2.png" />
-    <Resource Include="Images\Crystal+Maiden+Dota+2.png" />
-    <Resource Include="Images\Disruptor+Dota+2.png" />
-    <Resource Include="Images\Doom+Dota+2.png" />
-    <Resource Include="Images\Dragon+Knight+Dota+2.png" />
-    <Resource Include="Images\Drow+Ranger+Dota+2.png" />
-    <Resource Include="Images\Enchantress+Dota+2.png" />
-    <Resource Include="Images\Enigma+Dota+2.png" />
-    <Resource Include="Images\Gyrocopter+Dota+2.png" />
-    <Resource Include="Images\Juggernaut+Dota+2.png" />
-    <Resource Include="Images\Keeper+of+the+Light+Dota+2.png" />
-    <Resource Include="Images\Kunkka+Dota+2.png" />
-    <Resource Include="Images\Lich+Dota+2.png" />
-    <Resource Include="Images\Lina+Dota+2.png" />
-    <Resource Include="Images\Lone+Druid+Dota+2.png" />
-    <Resource Include="Images\Luna+Dota+2.png" />
-    <Resource Include="Images\Lycan+Dota+2.png" />
-    <Resource Include="Images\Medusa+Dota+2.png" />
-    <Resource Include="Images\Morphling+Dota+2.png" />
-    <Resource Include="Images\Natures+Prophet+Dota+2.png" />
-    <Resource Include="Images\Necrophos+Dota+2.png" />
-    <Resource Include="Images\Ogre+Magi+Dota+2.png" />
-    <Resource Include="Images\Omniknight+Dota+2.png" />
-    <Resource Include="Images\Phantom+Assassin+Dota+2.png" />
-    <Resource Include="Images\Puck+Dota+2.png" />
-    <Resource Include="Images\Queen+of+Pain+Dota+2.png" />
-    <Resource Include="Images\Razor+Dota+2.png" />
-    <Resource Include="Images\Sand+King+Dota+2.png" />
-    <Resource Include="Images\Shadow+Fiend+Dota+2.png" />
-    <Resource Include="Images\Shadow+Shaman+Dota+2.png" />
-    <Resource Include="Images\Slardar+Dota+2.png" />
-    <Resource Include="Images\Slark+Dota+2.png" />
-    <Resource Include="Images\Sniper+Dota+2.png" />
-    <Resource Include="Images\Techies+Dota+2.png" />
-    <Resource Include="Images\Templar+Assassin+Dota+2.png" />
-    <Resource Include="Images\Terrorblade+Dota+2.png" />
-    <Resource Include="Images\Tidehunter+Dota+2.png" />
-    <Resource Include="Images\Timbersaw+Dota+2.png" />
-    <Resource Include="Images\Tinker+Dota+2.png" />
-    <Resource Include="Images\Tiny+Dota+2.png" />
-    <Resource Include="Images\Treant+Protector+Dota+2.png" />
-    <Resource Include="Images\Troll+Warlord+Dota+2.png" />
-    <Resource Include="Images\Tusk+Dota+2.png" />
-    <Resource Include="Images\Venomancer+Dota+2.png" />
-    <Resource Include="Images\Viper+Dota+2.png" />
-    <Resource Include="Images\Windranger+Dota+2.png" />
-    <Resource Include="Images\Witch+Doctor+Dota+2.png" />
+    <Resource Include="Images\Abaddon.png" />
+    <Resource Include="Images\Alchemist.png" />
+    <Resource Include="Images\AntiMage.png" />
+    <Resource Include="Images\Axe.png" />
+    <Resource Include="Images\Batrider.png" />
+    <Resource Include="Images\Beastmaster.png" />
+    <Resource Include="Images\BountyHunter.png" />
+    <Resource Include="Images\ChaosKnight.png" />
+    <Resource Include="Images\Clockwerk.png" />
+    <Resource Include="Images\CrystalMaiden.png" />
+    <Resource Include="Images\Disruptor.png" />
+    <Resource Include="Images\Doom.png" />
+    <Resource Include="Images\DragonKnight.png" />
+    <Resource Include="Images\DrowRanger.png" />
+    <Resource Include="Images\Enchantress.png" />
+    <Resource Include="Images\Enigma.png" />
+    <Resource Include="Images\Gyrocopter.png" />
+    <Resource Include="Images\Juggernaut.png" />
+    <Resource Include="Images\KeeperoftheLight.png" />
+    <Resource Include="Images\Kunkka.png" />
+    <Resource Include="Images\Lich.png" />
+    <Resource Include="Images\Lina.png" />
+    <Resource Include="Images\LoneDruid.png" />
+    <Resource Include="Images\Luna.png" />
+    <Resource Include="Images\Lycan.png" />
+    <Resource Include="Images\Medusa.png" />
+    <Resource Include="Images\Morphling.png" />
+    <Resource Include="Images\NaturesProphet.png" />
+    <Resource Include="Images\Necrophos.png" />
+    <Resource Include="Images\OgreMagi.png" />
+    <Resource Include="Images\Omniknight.png" />
+    <Resource Include="Images\PhantomAssassin.png" />
+    <Resource Include="Images\Puck.png" />
+    <Resource Include="Images\QueenofPain.png" />
+    <Resource Include="Images\Razor.png" />
+    <Resource Include="Images\SandKing.png" />
+    <Resource Include="Images\ShadowFiend.png" />
+    <Resource Include="Images\ShadowShaman.png" />
+    <Resource Include="Images\Slardar.png" />
+    <Resource Include="Images\Slark.png" />
+    <Resource Include="Images\Sniper.png" />
+    <Resource Include="Images\Techies.png" />
+    <Resource Include="Images\TemplarAssassin.png" />
+    <Resource Include="Images\Terrorblade.png" />
+    <Resource Include="Images\Tidehunter.png" />
+    <Resource Include="Images\Timbersaw.png" />
+    <Resource Include="Images\Tinker.png" />
+    <Resource Include="Images\Tiny.png" />
+    <Resource Include="Images\TreantProtector.png" />
+    <Resource Include="Images\TrollWarlord.png" />
+    <Resource Include="Images\Tusk.png" />
+    <Resource Include="Images\Venomancer.png" />
+    <Resource Include="Images\Viper.png" />
+    <Resource Include="Images\Windranger.png" />
+    <Resource Include="Images\WitchDoctor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
