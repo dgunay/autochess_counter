@@ -7,211 +7,32 @@
         mc:Ignorable="d"
         Title="AutoChess Unit Counter" Height="598" Width="1000">
     <Grid>
-		<!-- Defines a 10x6 grid -->
+		<!-- Defines a 14x5 grid -->
 		<Grid.RowDefinitions>
-			<RowDefinition Height="20*"/>
-			<RowDefinition Height="20*"/>
-			<RowDefinition Height="20*"/>
-			<RowDefinition Height="20*"/>
-			<RowDefinition Height="20*"/>
-			<RowDefinition Height="20*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
-			<ColumnDefinition Width="10*"/>
+			<ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
 		
         <!-- Copypasta code because I have never used WPF before and do not know 
              how to implement an abstract/DRY solution -->
-        <Border Name="AbaddonBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Abaddon.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnAbaddonPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnAbaddonPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnAbaddonMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAbaddonMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtAbaddonCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="AlchemistBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Alchemist.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnAlchemistPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnAlchemistPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnAlchemistMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAlchemistMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtAlchemistCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="AntiMageBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/AntiMage.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnAntiMagePlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnAntiMagePlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnAntiMageMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAntiMageMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtAntiMageCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="AxeBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Axe.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnAxePlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnAxePlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnAxeMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAxeMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtAxeCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="BatriderBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Batrider.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnBatriderPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnBatriderPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnBatriderMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnBatriderMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtBatriderCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="BeastmasterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Beastmaster.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnBeastmasterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnBeastmasterPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnBeastmasterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnBeastmasterMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtBeastmasterCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="BountyHunterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="0">
+        <Border Name="BountyHunterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="0">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -228,7 +49,7 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnBountyHunterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnBountyHunterPlus_Click">
+                    <Button x:Name="BtnBountyHunterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnBountyHunterPlus_Click">
                         +
                     </Button>
                     <Button x:Name="BtnBountyHunterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnBountyHunterMinus_Click">
@@ -241,7 +62,7 @@
             </Grid>
         </Border>
 
-        <Border Name="ChaosKnightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="0">
+        <Border Name="AxeBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="0">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -249,7 +70,7 @@
                     <RowDefinition Height="40*"/>
                 </Grid.RowDefinitions>
                 <!-- Pic of the hero -->
-                <Image Source="Images/ChaosKnight.png"/>
+                <Image Source="Images/Axe.png"/>
                 <!-- Another grid containing counter stuff -->
                 <Grid Grid.Column="0" Grid.Row="1">
                     <Grid.ColumnDefinitions>
@@ -258,1280 +79,20 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnChaosKnightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnChaosKnightPlus_Click">
+                    <Button x:Name="BtnAxePlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnAxePlus_Click">
                         +
                     </Button>
-                    <Button x:Name="BtnChaosKnightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnChaosKnightMinus_Click">
+                    <Button x:Name="BtnAxeMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAxeMinus_Click">
                         -
                     </Button>
-                    <TextBox x:Name="TxtChaosKnightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                    <TextBox x:Name="TxtAxeCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
                         0
                     </TextBox>
                 </Grid>
             </Grid>
         </Border>
 
-        <Border Name="ClockwerkBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Clockwerk.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnClockwerkPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnClockwerkPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnClockwerkMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnClockwerkMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtClockwerkCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="CrystalMaidenBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="0">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/CrystalMaiden.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnCrystalMaidenPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnCrystalMaidenPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnCrystalMaidenMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnCrystalMaidenMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtCrystalMaidenCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="DisruptorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Disruptor.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnDisruptorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnDisruptorPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnDisruptorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDisruptorMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtDisruptorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="DoomBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Doom.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnDoomPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnDoomPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnDoomMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDoomMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtDoomCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="DragonKnightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/DragonKnight.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnDragonKnightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnDragonKnightPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnDragonKnightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDragonKnightMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtDragonKnightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="DrowRangerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/DrowRanger.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnDrowRangerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnDrowRangerPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnDrowRangerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDrowRangerMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtDrowRangerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="EnchantressBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Enchantress.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnEnchantressPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnEnchantressPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnEnchantressMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnEnchantressMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtEnchantressCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="EnigmaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Enigma.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnEnigmaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnEnigmaPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnEnigmaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnEnigmaMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtEnigmaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="GyrocopterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Gyrocopter.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnGyrocopterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnGyrocopterPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnGyrocopterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnGyrocopterMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtGyrocopterCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="JuggernautBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Juggernaut.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnJuggernautPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnJuggernautPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnJuggernautMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnJuggernautMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtJuggernautCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="KeeperoftheLightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/KeeperoftheLight.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnKeeperoftheLightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnKeeperoftheLightPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnKeeperoftheLightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnKeeperoftheLightMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtKeeperoftheLightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="KunkkaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="1">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Kunkka.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnKunkkaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnKunkkaPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnKunkkaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnKunkkaMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtKunkkaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="LichBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Lich.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnLichPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnLichPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnLichMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLichMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtLichCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="LinaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Lina.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnLinaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnLinaPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnLinaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLinaMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtLinaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="LoneDruidBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/LoneDruid.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnLoneDruidPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnLoneDruidPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnLoneDruidMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLoneDruidMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtLoneDruidCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="LunaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Luna.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnLunaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnLunaPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnLunaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLunaMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtLunaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="LycanBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Lycan.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnLycanPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnLycanPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnLycanMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLycanMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtLycanCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="MedusaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Medusa.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnMedusaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnMedusaPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnMedusaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnMedusaMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtMedusaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="MorphlingBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Morphling.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnMorphlingPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnMorphlingPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnMorphlingMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnMorphlingMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtMorphlingCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="NaturesProphetBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/NaturesProphet.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnNaturesProphetPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnNaturesProphetPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnNaturesProphetMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnNaturesProphetMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtNaturesProphetCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="NecrophosBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Necrophos.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnNecrophosPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnNecrophosPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnNecrophosMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnNecrophosMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtNecrophosCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="OgreMagiBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="2">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/OgreMagi.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnOgreMagiPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnOgreMagiPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnOgreMagiMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnOgreMagiMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtOgreMagiCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="OmniknightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Omniknight.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnOmniknightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnOmniknightPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnOmniknightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnOmniknightMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtOmniknightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="PhantomAssassinBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/PhantomAssassin.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnPhantomAssassinPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnPhantomAssassinPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnPhantomAssassinMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnPhantomAssassinMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtPhantomAssassinCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="PuckBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Puck.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnPuckPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnPuckPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnPuckMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnPuckMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtPuckCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="QueenofPainBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/QueenofPain.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnQueenofPainPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnQueenofPainPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnQueenofPainMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnQueenofPainMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtQueenofPainCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="RazorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Razor.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnRazorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnRazorPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnRazorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnRazorMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtRazorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="SandKingBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/SandKing.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnSandKingPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnSandKingPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnSandKingMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSandKingMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtSandKingCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="ShadowFiendBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/ShadowFiend.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnShadowFiendPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnShadowFiendPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnShadowFiendMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnShadowFiendMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtShadowFiendCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="ShadowShamanBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/ShadowShaman.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnShadowShamanPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnShadowShamanPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnShadowShamanMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnShadowShamanMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtShadowShamanCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="SlardarBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Slardar.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnSlardarPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnSlardarPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnSlardarMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSlardarMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtSlardarCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="SlarkBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="3">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Slark.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnSlarkPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnSlarkPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnSlarkMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSlarkMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtSlarkCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="SniperBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Sniper.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnSniperPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnSniperPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnSniperMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSniperMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtSniperCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TechiesBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Techies.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTechiesPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTechiesPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTechiesMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTechiesMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTechiesCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TemplarAssassinBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/TemplarAssassin.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTemplarAssassinPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTemplarAssassinPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTemplarAssassinMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTemplarAssassinMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTemplarAssassinCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TerrorbladeBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Terrorblade.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTerrorbladePlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTerrorbladePlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTerrorbladeMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTerrorbladeMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTerrorbladeCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TidehunterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Tidehunter.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTidehunterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTidehunterPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTidehunterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTidehunterMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTidehunterCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TimbersawBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Timbersaw.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTimbersawPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTimbersawPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTimbersawMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTimbersawMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTimbersawCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TinkerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Tinker.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTinkerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTinkerPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTinkerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTinkerMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTinkerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TinyBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/Tiny.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTinyPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTinyPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTinyMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTinyMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTinyCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TreantProtectorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/TreantProtector.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTreantProtectorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTreantProtectorPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTreantProtectorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTreantProtectorMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTreantProtectorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TrollWarlordBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="4">
-            <Grid>
-                <!-- Rows -->
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60*"/>
-                    <RowDefinition Height="40*"/>
-                </Grid.RowDefinitions>
-                <!-- Pic of the hero -->
-                <Image Source="Images/TrollWarlord.png"/>
-                <!-- Another grid containing counter stuff -->
-                <Grid Grid.Column="0" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="35*"/>
-                        <ColumnDefinition Width="30*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button x:Name="BtnTrollWarlordPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTrollWarlordPlus_Click">
-                        +
-                    </Button>
-                    <Button x:Name="BtnTrollWarlordMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTrollWarlordMinus_Click">
-                        -
-                    </Button>
-                    <TextBox x:Name="TxtTrollWarlordCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
-                        0
-                    </TextBox>
-                </Grid>
-            </Grid>
-        </Border>
-
-        <Border Name="TuskBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="5">
+        <Border Name="TuskBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="0">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -1548,7 +109,7 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnTuskPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnTuskPlus_Click">
+                    <Button x:Name="BtnTuskPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTuskPlus_Click">
                         +
                     </Button>
                     <Button x:Name="BtnTuskMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTuskMinus_Click">
@@ -1561,7 +122,7 @@
             </Grid>
         </Border>
 
-        <Border Name="VenomancerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="5">
+        <Border Name="ClockwerkBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="0">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -1569,7 +130,7 @@
                     <RowDefinition Height="40*"/>
                 </Grid.RowDefinitions>
                 <!-- Pic of the hero -->
-                <Image Source="Images/Venomancer.png"/>
+                <Image Source="Images/Clockwerk.png"/>
                 <!-- Another grid containing counter stuff -->
                 <Grid Grid.Column="0" Grid.Row="1">
                     <Grid.ColumnDefinitions>
@@ -1578,20 +139,20 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnVenomancerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnVenomancerPlus_Click">
+                    <Button x:Name="BtnClockwerkPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnClockwerkPlus_Click">
                         +
                     </Button>
-                    <Button x:Name="BtnVenomancerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnVenomancerMinus_Click">
+                    <Button x:Name="BtnClockwerkMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnClockwerkMinus_Click">
                         -
                     </Button>
-                    <TextBox x:Name="TxtVenomancerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                    <TextBox x:Name="TxtClockwerkCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
                         0
                     </TextBox>
                 </Grid>
             </Grid>
         </Border>
 
-        <Border Name="ViperBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="5">
+        <Border Name="TinkerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="0">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -1599,7 +160,7 @@
                     <RowDefinition Height="40*"/>
                 </Grid.RowDefinitions>
                 <!-- Pic of the hero -->
-                <Image Source="Images/Viper.png"/>
+                <Image Source="Images/Tinker.png"/>
                 <!-- Another grid containing counter stuff -->
                 <Grid Grid.Column="0" Grid.Row="1">
                     <Grid.ColumnDefinitions>
@@ -1608,20 +169,20 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnViperPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnViperPlus_Click">
+                    <Button x:Name="BtnTinkerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTinkerPlus_Click">
                         +
                     </Button>
-                    <Button x:Name="BtnViperMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnViperMinus_Click">
+                    <Button x:Name="BtnTinkerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTinkerMinus_Click">
                         -
                     </Button>
-                    <TextBox x:Name="TxtViperCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                    <TextBox x:Name="TxtTinkerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
                         0
                     </TextBox>
                 </Grid>
             </Grid>
         </Border>
 
-        <Border Name="WindrangerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="5">
+        <Border Name="OgreMagiBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="0">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -1629,7 +190,7 @@
                     <RowDefinition Height="40*"/>
                 </Grid.RowDefinitions>
                 <!-- Pic of the hero -->
-                <Image Source="Images/Windranger.png"/>
+                <Image Source="Images/OgreMagi.png"/>
                 <!-- Another grid containing counter stuff -->
                 <Grid Grid.Column="0" Grid.Row="1">
                     <Grid.ColumnDefinitions>
@@ -1638,20 +199,410 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnWindrangerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnWindrangerPlus_Click">
+                    <Button x:Name="BtnOgreMagiPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnOgreMagiPlus_Click">
                         +
                     </Button>
-                    <Button x:Name="BtnWindrangerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnWindrangerMinus_Click">
+                    <Button x:Name="BtnOgreMagiMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnOgreMagiMinus_Click">
                         -
                     </Button>
-                    <TextBox x:Name="TxtWindrangerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                    <TextBox x:Name="TxtOgreMagiCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
                         0
                     </TextBox>
                 </Grid>
             </Grid>
         </Border>
 
-        <Border Name="WitchDoctorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="5">
+        <Border Name="EnchantressBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="0">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Enchantress.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnEnchantressPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnEnchantressPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnEnchantressMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnEnchantressMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtEnchantressCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="AntiMageBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="0">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/AntiMage.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnAntiMagePlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnAntiMagePlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnAntiMageMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAntiMageMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtAntiMageCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="BatriderBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="0">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Batrider.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnBatriderPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnBatriderPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnBatriderMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnBatriderMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtBatriderCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="ShadowShamanBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="0">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/ShadowShaman.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnShadowShamanPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnShadowShamanPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnShadowShamanMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnShadowShamanMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtShadowShamanCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="DrowRangerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="10" Grid.Row="0">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/DrowRanger.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnDrowRangerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnDrowRangerPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnDrowRangerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDrowRangerMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtDrowRangerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TinyBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="11" Grid.Row="0">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Tiny.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTinyPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTinyPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTinyMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTinyMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTinyCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="BeastmasterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Beastmaster.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnBeastmasterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnBeastmasterPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnBeastmasterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnBeastmasterMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtBeastmasterCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="JuggernautBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Juggernaut.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnJuggernautPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnJuggernautPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnJuggernautMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnJuggernautMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtJuggernautCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TimbersawBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Timbersaw.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTimbersawPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTimbersawPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTimbersawMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTimbersawMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTimbersawCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="QueenofPainBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/QueenofPain.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnQueenofPainPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnQueenofPainPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnQueenofPainMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnQueenofPainMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtQueenofPainCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TreantProtectorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/TreantProtector.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTreantProtectorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTreantProtectorPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTreantProtectorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTreantProtectorMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTreantProtectorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="SlardarBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Slardar.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnSlardarPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnSlardarPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnSlardarMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSlardarMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtSlardarCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="LunaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Luna.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnLunaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnLunaPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnLunaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLunaMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtLunaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="WitchDoctorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="1">
             <Grid>
                 <!-- Rows -->
                 <Grid.RowDefinitions>
@@ -1668,13 +619,1063 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="BtnWitchDoctorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold"  Click="BtnWitchDoctorPlus_Click">
+                    <Button x:Name="BtnWitchDoctorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnWitchDoctorPlus_Click">
                         +
                     </Button>
                     <Button x:Name="BtnWitchDoctorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnWitchDoctorMinus_Click">
                         -
                     </Button>
                     <TextBox x:Name="TxtWitchDoctorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="PuckBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Puck.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnPuckPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnPuckPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnPuckMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnPuckMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtPuckCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="ChaosKnightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/ChaosKnight.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnChaosKnightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnChaosKnightPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnChaosKnightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnChaosKnightMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtChaosKnightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="MorphlingBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="10" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Morphling.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnMorphlingPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnMorphlingPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnMorphlingMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnMorphlingMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtMorphlingCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="NaturesProphetBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="11" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/NaturesProphet.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnNaturesProphetPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnNaturesProphetPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnNaturesProphetMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnNaturesProphetMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtNaturesProphetCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="CrystalMaidenBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="12" Grid.Row="1">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/CrystalMaiden.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnCrystalMaidenPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnCrystalMaidenPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnCrystalMaidenMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnCrystalMaidenMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtCrystalMaidenCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="ShadowFiendBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/ShadowFiend.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnShadowFiendPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnShadowFiendPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnShadowFiendMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnShadowFiendMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtShadowFiendCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="RazorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Razor.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnRazorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnRazorPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnRazorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnRazorMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtRazorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="LycanBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Lycan.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnLycanPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnLycanPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnLycanMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLycanMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtLycanCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="ViperBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Viper.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnViperPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnViperPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnViperMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnViperMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtViperCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="AbaddonBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Abaddon.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnAbaddonPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnAbaddonPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnAbaddonMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAbaddonMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtAbaddonCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="OmniknightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Omniknight.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnOmniknightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnOmniknightPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnOmniknightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnOmniknightMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtOmniknightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="WindrangerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Windranger.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnWindrangerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnWindrangerPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnWindrangerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnWindrangerMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtWindrangerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TerrorbladeBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Terrorblade.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTerrorbladePlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTerrorbladePlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTerrorbladeMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTerrorbladeMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTerrorbladeCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="VenomancerBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Venomancer.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnVenomancerPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnVenomancerPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnVenomancerMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnVenomancerMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtVenomancerCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="SlarkBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Slark.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnSlarkPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnSlarkPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnSlarkMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSlarkMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtSlarkCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="SandKingBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="10" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/SandKing.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnSandKingPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnSandKingPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnSandKingMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSandKingMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtSandKingCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="PhantomAssassinBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="11" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/PhantomAssassin.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnPhantomAssassinPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnPhantomAssassinPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnPhantomAssassinMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnPhantomAssassinMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtPhantomAssassinCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="SniperBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="12" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Sniper.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnSniperPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnSniperPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnSniperMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnSniperMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtSniperCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="LinaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="13" Grid.Row="2">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Lina.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnLinaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnLinaPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnLinaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLinaMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtLinaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="DisruptorBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Disruptor.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnDisruptorPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnDisruptorPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnDisruptorMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDisruptorMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtDisruptorCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="KunkkaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Kunkka.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnKunkkaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnKunkkaPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnKunkkaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnKunkkaMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtKunkkaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="DoomBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Doom.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnDoomPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnDoomPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnDoomMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDoomMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtDoomCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="LoneDruidBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/LoneDruid.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnLoneDruidPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnLoneDruidPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnLoneDruidMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLoneDruidMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtLoneDruidCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="MedusaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Medusa.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnMedusaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnMedusaPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnMedusaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnMedusaMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtMedusaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TrollWarlordBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="5" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/TrollWarlord.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTrollWarlordPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTrollWarlordPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTrollWarlordMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTrollWarlordMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTrollWarlordCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="AlchemistBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="6" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Alchemist.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnAlchemistPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnAlchemistPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnAlchemistMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnAlchemistMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtAlchemistCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TemplarAssassinBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="7" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/TemplarAssassin.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTemplarAssassinPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTemplarAssassinPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTemplarAssassinMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTemplarAssassinMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTemplarAssassinCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="DragonKnightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="8" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/DragonKnight.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnDragonKnightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnDragonKnightPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnDragonKnightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnDragonKnightMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtDragonKnightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="NecrophosBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="9" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Necrophos.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnNecrophosPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnNecrophosPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnNecrophosMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnNecrophosMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtNecrophosCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="KeeperoftheLightBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="10" Grid.Row="3">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/KeeperoftheLight.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnKeeperoftheLightPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnKeeperoftheLightPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnKeeperoftheLightMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnKeeperoftheLightMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtKeeperoftheLightCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TidehunterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="0" Grid.Row="4">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Tidehunter.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTidehunterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTidehunterPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTidehunterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTidehunterMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTidehunterCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="EnigmaBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="4">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Enigma.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnEnigmaPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnEnigmaPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnEnigmaMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnEnigmaMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtEnigmaCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="LichBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="4">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Lich.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnLichPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnLichPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnLichMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnLichMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtLichCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="TechiesBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="3" Grid.Row="4">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Techies.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnTechiesPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnTechiesPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnTechiesMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnTechiesMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtTechiesCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
+                        0
+                    </TextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Name="GyrocopterBorder" BorderBrush="Black" BorderThickness="2" Grid.Column="4" Grid.Row="4">
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <!-- Pic of the hero -->
+                <Image Source="Images/Gyrocopter.png"/>
+                <!-- Another grid containing counter stuff -->
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnGyrocopterPlus"  Grid.Column="0" FontSize="20" FontWeight="Bold" Click="BtnGyrocopterPlus_Click">
+                        +
+                    </Button>
+                    <Button x:Name="BtnGyrocopterMinus" Grid.Column="1" FontSize="20" FontWeight="Bold" Click="BtnGyrocopterMinus_Click">
+                        -
+                    </Button>
+                    <TextBox x:Name="TxtGyrocopterCount" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" IsReadOnly="True">
                         0
                     </TextBox>
                 </Grid>
