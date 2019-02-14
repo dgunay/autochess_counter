@@ -20,9 +20,9 @@ So the rows from top to bottom are 1-5 gold, and left to right is best to worst 
 I am very inexperienced in GUI applications and threw this together in a few
 hours, so rather than express a hero counter abstractly in XAML/C#, I wrote some
 Perl to generate the XAML and OnClick() methods of each hero sprite .png in
-the Images folder. I would have liked for the user to be able to expand the
+the Images folder and align them in a Grid on the main window. I would have liked for the user to be able to expand the
 program by including more sprites at runtime if Auto Chess is updated with new
-heroes.
+heroes, but I didn't want to dive deep enough into WPF to bother with that.
 
 ## Building from source
 
