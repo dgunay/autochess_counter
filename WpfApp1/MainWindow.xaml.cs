@@ -29,7 +29,7 @@ namespace AutoChess_Counter
         private void BtnAbaddonPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtAbaddonCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtAbaddonCount.Text = count.ToString();
         }
@@ -45,7 +45,7 @@ namespace AutoChess_Counter
         private void BtnAlchemistPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtAlchemistCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtAlchemistCount.Text = count.ToString();
         }
@@ -61,7 +61,7 @@ namespace AutoChess_Counter
         private void BtnAntiMagePlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtAntiMageCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtAntiMageCount.Text = count.ToString();
         }
@@ -77,7 +77,7 @@ namespace AutoChess_Counter
         private void BtnAxePlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtAxeCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtAxeCount.Text = count.ToString();
         }
@@ -93,7 +93,7 @@ namespace AutoChess_Counter
         private void BtnBatriderPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtBatriderCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtBatriderCount.Text = count.ToString();
         }
@@ -109,7 +109,7 @@ namespace AutoChess_Counter
         private void BtnBeastmasterPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtBeastmasterCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtBeastmasterCount.Text = count.ToString();
         }
@@ -125,7 +125,7 @@ namespace AutoChess_Counter
         private void BtnBountyHunterPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtBountyHunterCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtBountyHunterCount.Text = count.ToString();
         }
@@ -141,7 +141,7 @@ namespace AutoChess_Counter
         private void BtnChaosKnightPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtChaosKnightCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtChaosKnightCount.Text = count.ToString();
         }
@@ -157,7 +157,7 @@ namespace AutoChess_Counter
         private void BtnClockwerkPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtClockwerkCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtClockwerkCount.Text = count.ToString();
         }
@@ -173,7 +173,7 @@ namespace AutoChess_Counter
         private void BtnCrystalMaidenPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtCrystalMaidenCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtCrystalMaidenCount.Text = count.ToString();
         }
@@ -189,7 +189,7 @@ namespace AutoChess_Counter
         private void BtnDisruptorPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtDisruptorCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtDisruptorCount.Text = count.ToString();
         }
@@ -205,7 +205,7 @@ namespace AutoChess_Counter
         private void BtnDoomPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtDoomCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtDoomCount.Text = count.ToString();
         }
@@ -221,7 +221,7 @@ namespace AutoChess_Counter
         private void BtnDragonKnightPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtDragonKnightCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtDragonKnightCount.Text = count.ToString();
         }
@@ -237,7 +237,7 @@ namespace AutoChess_Counter
         private void BtnDrowRangerPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtDrowRangerCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtDrowRangerCount.Text = count.ToString();
         }
@@ -253,7 +253,7 @@ namespace AutoChess_Counter
         private void BtnEnchantressPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtEnchantressCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtEnchantressCount.Text = count.ToString();
         }
@@ -269,7 +269,7 @@ namespace AutoChess_Counter
         private void BtnEnigmaPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtEnigmaCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtEnigmaCount.Text = count.ToString();
         }
@@ -285,7 +285,7 @@ namespace AutoChess_Counter
         private void BtnGyrocopterPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtGyrocopterCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtGyrocopterCount.Text = count.ToString();
         }
@@ -301,7 +301,7 @@ namespace AutoChess_Counter
         private void BtnJuggernautPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtJuggernautCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtJuggernautCount.Text = count.ToString();
         }
@@ -317,7 +317,7 @@ namespace AutoChess_Counter
         private void BtnKeeperoftheLightPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtKeeperoftheLightCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtKeeperoftheLightCount.Text = count.ToString();
         }
@@ -333,7 +333,7 @@ namespace AutoChess_Counter
         private void BtnKunkkaPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtKunkkaCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtKunkkaCount.Text = count.ToString();
         }
@@ -349,7 +349,7 @@ namespace AutoChess_Counter
         private void BtnLichPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtLichCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtLichCount.Text = count.ToString();
         }
@@ -365,7 +365,7 @@ namespace AutoChess_Counter
         private void BtnLinaPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtLinaCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtLinaCount.Text = count.ToString();
         }
@@ -381,7 +381,7 @@ namespace AutoChess_Counter
         private void BtnLoneDruidPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtLoneDruidCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtLoneDruidCount.Text = count.ToString();
         }
@@ -397,7 +397,7 @@ namespace AutoChess_Counter
         private void BtnLunaPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtLunaCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtLunaCount.Text = count.ToString();
         }
@@ -413,7 +413,7 @@ namespace AutoChess_Counter
         private void BtnLycanPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtLycanCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtLycanCount.Text = count.ToString();
         }
@@ -429,7 +429,7 @@ namespace AutoChess_Counter
         private void BtnMedusaPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtMedusaCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtMedusaCount.Text = count.ToString();
         }
@@ -445,7 +445,7 @@ namespace AutoChess_Counter
         private void BtnMorphlingPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtMorphlingCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtMorphlingCount.Text = count.ToString();
         }
@@ -461,7 +461,7 @@ namespace AutoChess_Counter
         private void BtnNaturesProphetPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtNaturesProphetCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtNaturesProphetCount.Text = count.ToString();
         }
@@ -477,7 +477,7 @@ namespace AutoChess_Counter
         private void BtnNecrophosPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtNecrophosCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtNecrophosCount.Text = count.ToString();
         }
@@ -493,7 +493,7 @@ namespace AutoChess_Counter
         private void BtnOgreMagiPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtOgreMagiCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtOgreMagiCount.Text = count.ToString();
         }
@@ -509,7 +509,7 @@ namespace AutoChess_Counter
         private void BtnOmniknightPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtOmniknightCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtOmniknightCount.Text = count.ToString();
         }
@@ -525,7 +525,7 @@ namespace AutoChess_Counter
         private void BtnPhantomAssassinPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtPhantomAssassinCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtPhantomAssassinCount.Text = count.ToString();
         }
@@ -541,7 +541,7 @@ namespace AutoChess_Counter
         private void BtnPuckPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtPuckCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtPuckCount.Text = count.ToString();
         }
@@ -557,7 +557,7 @@ namespace AutoChess_Counter
         private void BtnQueenofPainPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtQueenofPainCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtQueenofPainCount.Text = count.ToString();
         }
@@ -573,7 +573,7 @@ namespace AutoChess_Counter
         private void BtnRazorPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtRazorCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtRazorCount.Text = count.ToString();
         }
@@ -589,7 +589,7 @@ namespace AutoChess_Counter
         private void BtnSandKingPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtSandKingCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtSandKingCount.Text = count.ToString();
         }
@@ -605,7 +605,7 @@ namespace AutoChess_Counter
         private void BtnShadowFiendPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtShadowFiendCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtShadowFiendCount.Text = count.ToString();
         }
@@ -621,7 +621,7 @@ namespace AutoChess_Counter
         private void BtnShadowShamanPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtShadowShamanCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtShadowShamanCount.Text = count.ToString();
         }
@@ -637,7 +637,7 @@ namespace AutoChess_Counter
         private void BtnSlardarPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtSlardarCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtSlardarCount.Text = count.ToString();
         }
@@ -653,7 +653,7 @@ namespace AutoChess_Counter
         private void BtnSlarkPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtSlarkCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtSlarkCount.Text = count.ToString();
         }
@@ -669,7 +669,7 @@ namespace AutoChess_Counter
         private void BtnSniperPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtSniperCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtSniperCount.Text = count.ToString();
         }
@@ -685,7 +685,7 @@ namespace AutoChess_Counter
         private void BtnTechiesPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTechiesCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTechiesCount.Text = count.ToString();
         }
@@ -701,7 +701,7 @@ namespace AutoChess_Counter
         private void BtnTemplarAssassinPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTemplarAssassinCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTemplarAssassinCount.Text = count.ToString();
         }
@@ -717,7 +717,7 @@ namespace AutoChess_Counter
         private void BtnTerrorbladePlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTerrorbladeCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTerrorbladeCount.Text = count.ToString();
         }
@@ -733,7 +733,7 @@ namespace AutoChess_Counter
         private void BtnTidehunterPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTidehunterCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTidehunterCount.Text = count.ToString();
         }
@@ -749,7 +749,7 @@ namespace AutoChess_Counter
         private void BtnTimbersawPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTimbersawCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTimbersawCount.Text = count.ToString();
         }
@@ -765,7 +765,7 @@ namespace AutoChess_Counter
         private void BtnTinkerPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTinkerCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTinkerCount.Text = count.ToString();
         }
@@ -781,7 +781,7 @@ namespace AutoChess_Counter
         private void BtnTinyPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTinyCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTinyCount.Text = count.ToString();
         }
@@ -797,7 +797,7 @@ namespace AutoChess_Counter
         private void BtnTreantProtectorPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTreantProtectorCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTreantProtectorCount.Text = count.ToString();
         }
@@ -813,7 +813,7 @@ namespace AutoChess_Counter
         private void BtnTrollWarlordPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTrollWarlordCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTrollWarlordCount.Text = count.ToString();
         }
@@ -829,7 +829,7 @@ namespace AutoChess_Counter
         private void BtnTuskPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtTuskCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtTuskCount.Text = count.ToString();
         }
@@ -845,7 +845,7 @@ namespace AutoChess_Counter
         private void BtnVenomancerPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtVenomancerCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtVenomancerCount.Text = count.ToString();
         }
@@ -861,7 +861,7 @@ namespace AutoChess_Counter
         private void BtnViperPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtViperCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtViperCount.Text = count.ToString();
         }
@@ -877,7 +877,7 @@ namespace AutoChess_Counter
         private void BtnWindrangerPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtWindrangerCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtWindrangerCount.Text = count.ToString();
         }
@@ -893,7 +893,7 @@ namespace AutoChess_Counter
         private void BtnWitchDoctorPlus_Click(object sender, RoutedEventArgs e)
         {
             int count = Int32.Parse(TxtWitchDoctorCount.Text);
-            if (count < 3)
+            if (count < 9)
                 ++count;
             TxtWitchDoctorCount.Text = count.ToString();
         }
