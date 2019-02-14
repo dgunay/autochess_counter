@@ -1,4 +1,5 @@
 # Auto Chess Counter
+![Example](https://i.imgur.com/wdpFXBu.png)
 
 This app simply helps you manually track how many units of a given type are on
 the field in Dota 2 Auto Chess.
