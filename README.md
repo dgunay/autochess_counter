@@ -15,6 +15,8 @@ The units are laid out according to a tier list my friend made, which is ordered
 
 So the rows from top to bottom are 1-5 gold, and left to right is best to worst in class.
 
+## Architecture/Code Design
+
 I am very inexperienced in GUI applications and threw this together in a few
 hours, so rather than express a hero counter abstractly in XAML/C#, I wrote some
 Perl to generate the XAML and OnClick() methods of each hero sprite .png in
